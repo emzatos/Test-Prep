@@ -1,0 +1,52 @@
+Sample Problems:
+
+implement merge, count, count_if, all_of, any_of
+
+(all using iterators)
+
+merge returns an iterator pointing to the end of the combined list
+
+Things to keep in mind: 
+	number of arguments, types/strength of arguments, operations used in implementation, return type
+
+1 2 5 7 
+1 3 5 5
+				 |
+1 1 2 3 5 5 5 7 here
+
+count returns the number of times an element occurs in a list
+
+count_if returns the number of items that pass a unary predicate
+
+all_of returns whether all elements adhere to a unary predicate
+
+any_of returns whether at least on element adheres to a unary predicate
+
+
+
+implement PrimeRange, given isPrime function
+
+PrimeRange takes in two numbers and will immediately set 
+begin and end iterators to the next largest prime number
+
+PrimeRange<int> x(4, 15);
+*x.begin(); // outputs 5
+*x.end(); // outputs 17
+
+
+Iterator should act the same way as a range iterator,
+but incrementing it moves the iterator to the next prime number
+
+PrimeRange<int>::iterator it = x.begin();
+*it; // 5
+*(++it); // 7
+
+
+
+
+
+
+
+
+
+
